@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>feature.spacex</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-06-03 10:06:28 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:16]"><span>[1.1:16]</span> <span>Validate the API Response Status as 200</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:18]"><span>[2:18]</span> <span>Validate the Response we are getting is matching with expected output file</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:25]"><span>[3:25]</span> <span>Validate the ID value in Response</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:31]"><span>[4:31]</span> <span>Validate that particular key value is present in response</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">feature/spacex.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validation of Space X API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:16]</span>
+                <span class="scenario-name">Validate the API Response Status as 200</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2859</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.spacexdata.com/v4/launches/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">22:06:22.474 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def pathFun = Java.type(&#39;filePath.UserPath&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = new pathFun().systemPath();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedOut = read(&#39;classpath:/resources/response.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">184</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;latest&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2602</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">22:06:23.928 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:25.443 response time in milliseconds: 1499
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:25 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 1ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:18]</span>
+                <span class="scenario-name">Validate the Response we are getting is matching with expected output file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>877</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.spacexdata.com/v4/launches/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">22:06:25.542 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def pathFun = Java.type(&#39;filePath.UserPath&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = new pathFun().systemPath();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedOut = read(&#39;classpath:/resources/response.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;latest&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">791</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">22:06:25.607 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:26.393 response time in milliseconds: 781
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:26 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 1ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">22:06:26.404 [print] {
+  &quot;launchpad&quot;: &quot;5e9e4501f509094ba4566f84&quot;,
+  &quot;payloads&quot;: [
+    &quot;6079bd679a06446e8c61bf7d&quot;
+  ],
+  &quot;rocket&quot;: &quot;5e9d0d95eda69973a809d1ec&quot;,
+  &quot;crew&quot;: [
+  ],
+  &quot;date_unix&quot;: 1622055540,
+  &quot;cores&quot;: [
+    {
+      &quot;core&quot;: &quot;5f57c54a0622a633027900a1&quot;,
+      &quot;flight&quot;: 2,
+      &quot;landing_type&quot;: &quot;ASDS&quot;,
+      &quot;gridfins&quot;: true,
+      &quot;landing_attempt&quot;: true,
+      &quot;legs&quot;: true,
+      &quot;landpad&quot;: &quot;5e9e3033383ecbb9e534e7cc&quot;,
+      &quot;reused&quot;: true,
+      &quot;landing_success&quot;: true
+    }
+  ],
+  &quot;auto_update&quot;: true,
+  &quot;date_precision&quot;: &quot;hour&quot;,
+  &quot;links&quot;: {
+    &quot;patch&quot;: {
+      &quot;small&quot;: &quot;https://imgur.com/BrW201S.png&quot;,
+      &quot;large&quot;: &quot;https://imgur.com/573IfGk.png&quot;
+    },
+    &quot;webcast&quot;: &quot;https://youtu.be/xRu-ekesDyY&quot;,
+    &quot;flickr&quot;: {
+      &quot;small&quot;: [
+      ],
+      &quot;original&quot;: [
+      ]
+    },
+    &quot;reddit&quot;: {
+      &quot;campaign&quot;: &quot;https://www.reddit.com/r/spacex/comments/jhu37i/starlink_general_discussion_and_deployment_thread/&quot;,
+      &quot;launch&quot;: &quot;https://www.reddit.com/r/spacex/comments/nkxg4s/rspacex_starlink28_launch_discussion_and_updates/&quot;,
+      &quot;media&quot;: null,
+      &quot;recovery&quot;: &quot;https://www.reddit.com/r/spacex/comments/k2ts1q/rspacex_fleet_updates_discussion_thread/&quot;
+    },
+    &quot;wikipedia&quot;: &quot;https://en.wikipedia.org/wiki/Starlink&quot;,
+    &quot;youtube_id&quot;: &quot;xRu-ekesDyY&quot;,
+    &quot;presskit&quot;: null,
+    &quot;article&quot;: null
+  },
+  &quot;details&quot;: &quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,
+  &quot;id&quot;: &quot;6079bd399a06446e8c61bf77&quot;,
+  &quot;net&quot;: false,
+  &quot;capsules&quot;: [
+  ],
+  &quot;static_fire_date_utc&quot;: null,
+  &quot;failures&quot;: [
+  ],
+  &quot;date_local&quot;: &quot;2021-05-26T14:59:00-04:00&quot;,
+  &quot;flight_number&quot;: 128,
+  &quot;launch_library_id&quot;: &quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,
+  &quot;fairings&quot;: {
+    &quot;recovered&quot;: true,
+    &quot;ships&quot;: [
+      &quot;5ea6ed2e080df4000697c909&quot;,
+      &quot;5ea6ed2f080df4000697c90c&quot;
+    ],
+    &quot;recovery_attempt&quot;: true,
+    &quot;reused&quot;: true
+  },
+  &quot;ships&quot;: [
+    &quot;5ea6ed30080df4000697c913&quot;,
+    &quot;5ea6ed2f080df4000697c90c&quot;,
+    &quot;5ee68c683c228f36bd5809b5&quot;,
+    &quot;5ea6ed2f080df4000697c90b&quot;,
+    &quot;5ea6ed2e080df4000697c909&quot;
+  ],
+  &quot;date_utc&quot;: &quot;2021-05-26T18:59:00.000Z&quot;,
+  &quot;static_fire_date_unix&quot;: null,
+  &quot;success&quot;: true,
+  &quot;tbd&quot;: false,
+  &quot;name&quot;: &quot;Starlink-28 (v1.0)&quot;,
+  &quot;window&quot;: null,
+  &quot;upcoming&quot;: false
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response  == expectedOut</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:25]</span>
+                <span class="scenario-name">Validate the ID value in Response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>853</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.spacexdata.com/v4/launches/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">22:06:26.512 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def pathFun = Java.type(&#39;filePath.UserPath&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = new pathFun().systemPath();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedOut = read(&#39;classpath:/resources/response.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;latest&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">761</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">22:06:26.623 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:27.369 response time in milliseconds: 743
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:27 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 1ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.id  == &#39;6079bd399a06446e8c61bf77&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.fairings.reused == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:31]</span>
+                <span class="scenario-name">Validate that particular key value is present in response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>796</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.spacexdata.com/v4/launches/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">22:06:27.428 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def pathFun = Java.type(&#39;filePath.UserPath&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = new pathFun().systemPath();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedOut = read(&#39;classpath:/resources/response.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;latest&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">771</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">22:06:27.450 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:28.214 response time in milliseconds: 761
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;block-all-mixed-content;font-src &#39;self&#39; https: data:;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:27 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 0ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.static_fire_date_utc  ==  null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

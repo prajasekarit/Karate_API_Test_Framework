@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: feature/spacex.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>03 Jun 2021, 22:06</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">feature/spacex.feature</td>
+                    <td      class="passed"    >30</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">30</td>
+
+          <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="5385455100">5s 385ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">feature/spacex.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Validation of Space X API</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">231ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.spacexdata.com/v4/launches/'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>22:06:22.474 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pathFun = Java.type('filePath.UserPath')</span>
+  
+  <span class="lead-duration duration">024ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = new pathFun().systemPath();</span>
+  
+  <span class="lead-duration duration">021ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedOut = read('classpath:/resources/response.json')</span>
+  
+  <span class="lead-duration duration">183ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 627ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate the API Response Status as 200</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'latest'</span>
+  
+  <span class="lead-duration duration">025ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">2s 602ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>22:06:23.928 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:25.443 response time in milliseconds: 1499
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:25 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 1ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">040ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.spacexdata.com/v4/launches/'</span>
+  
+  <span class="lead-duration duration">020ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>22:06:25.542 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pathFun = Java.type('filePath.UserPath')</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = new pathFun().systemPath();</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedOut = read('classpath:/resources/response.json')</span>
+  
+  <span class="lead-duration duration">013ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">836ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate the Response we are getting is matching with expected output file</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'latest'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">791ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>22:06:25.607 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:26.393 response time in milliseconds: 781
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:26 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 1ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>22:06:26.404 [print] {
+  &quot;launchpad&quot;: &quot;5e9e4501f509094ba4566f84&quot;,
+  &quot;payloads&quot;: [
+    &quot;6079bd679a06446e8c61bf7d&quot;
+  ],
+  &quot;rocket&quot;: &quot;5e9d0d95eda69973a809d1ec&quot;,
+  &quot;crew&quot;: [
+  ],
+  &quot;date_unix&quot;: 1622055540,
+  &quot;cores&quot;: [
+    {
+      &quot;core&quot;: &quot;5f57c54a0622a633027900a1&quot;,
+      &quot;flight&quot;: 2,
+      &quot;landing_type&quot;: &quot;ASDS&quot;,
+      &quot;gridfins&quot;: true,
+      &quot;landing_attempt&quot;: true,
+      &quot;legs&quot;: true,
+      &quot;landpad&quot;: &quot;5e9e3033383ecbb9e534e7cc&quot;,
+      &quot;reused&quot;: true,
+      &quot;landing_success&quot;: true
+    }
+  ],
+  &quot;auto_update&quot;: true,
+  &quot;date_precision&quot;: &quot;hour&quot;,
+  &quot;links&quot;: {
+    &quot;patch&quot;: {
+      &quot;small&quot;: &quot;https://imgur.com/BrW201S.png&quot;,
+      &quot;large&quot;: &quot;https://imgur.com/573IfGk.png&quot;
+    },
+    &quot;webcast&quot;: &quot;https://youtu.be/xRu-ekesDyY&quot;,
+    &quot;flickr&quot;: {
+      &quot;small&quot;: [
+      ],
+      &quot;original&quot;: [
+      ]
+    },
+    &quot;reddit&quot;: {
+      &quot;campaign&quot;: &quot;https://www.reddit.com/r/spacex/comments/jhu37i/starlink_general_discussion_and_deployment_thread/&quot;,
+      &quot;launch&quot;: &quot;https://www.reddit.com/r/spacex/comments/nkxg4s/rspacex_starlink28_launch_discussion_and_updates/&quot;,
+      &quot;media&quot;: null,
+      &quot;recovery&quot;: &quot;https://www.reddit.com/r/spacex/comments/k2ts1q/rspacex_fleet_updates_discussion_thread/&quot;
+    },
+    &quot;wikipedia&quot;: &quot;https://en.wikipedia.org/wiki/Starlink&quot;,
+    &quot;youtube_id&quot;: &quot;xRu-ekesDyY&quot;,
+    &quot;presskit&quot;: null,
+    &quot;article&quot;: null
+  },
+  &quot;details&quot;: &quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,
+  &quot;id&quot;: &quot;6079bd399a06446e8c61bf77&quot;,
+  &quot;net&quot;: false,
+  &quot;capsules&quot;: [
+  ],
+  &quot;static_fire_date_utc&quot;: null,
+  &quot;failures&quot;: [
+  ],
+  &quot;date_local&quot;: &quot;2021-05-26T14:59:00-04:00&quot;,
+  &quot;flight_number&quot;: 128,
+  &quot;launch_library_id&quot;: &quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,
+  &quot;fairings&quot;: {
+    &quot;recovered&quot;: true,
+    &quot;ships&quot;: [
+      &quot;5ea6ed2e080df4000697c909&quot;,
+      &quot;5ea6ed2f080df4000697c90c&quot;
+    ],
+    &quot;recovery_attempt&quot;: true,
+    &quot;reused&quot;: true
+  },
+  &quot;ships&quot;: [
+    &quot;5ea6ed30080df4000697c913&quot;,
+    &quot;5ea6ed2f080df4000697c90c&quot;,
+    &quot;5ee68c683c228f36bd5809b5&quot;,
+    &quot;5ea6ed2f080df4000697c90b&quot;,
+    &quot;5ea6ed2e080df4000697c909&quot;
+  ],
+  &quot;date_utc&quot;: &quot;2021-05-26T18:59:00.000Z&quot;,
+  &quot;static_fire_date_unix&quot;: null,
+  &quot;success&quot;: true,
+  &quot;tbd&quot;: false,
+  &quot;name&quot;: &quot;Starlink-28 (v1.0)&quot;,
+  &quot;window&quot;: null,
+  &quot;upcoming&quot;: false
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response  == expectedOut</span>
+  
+  <span class="lead-duration duration">034ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">081ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-14" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.spacexdata.com/v4/launches/'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>22:06:26.512 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pathFun = Java.type('filePath.UserPath')</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = new pathFun().systemPath();</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedOut = read('classpath:/resources/response.json')</span>
+  
+  <span class="lead-duration duration">073ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">771ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate the ID value in Response</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'latest'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">761ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>22:06:26.623 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:27.369 response time in milliseconds: 743
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:27 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 1ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.id  == '6079bd399a06446e8c61bf77'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.fairings.reused == true</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">013ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.spacexdata.com/v4/launches/'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>22:06:27.428 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pathFun = Java.type('filePath.UserPath')</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = new pathFun().systemPath();</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedOut = read('classpath:/resources/response.json')</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">782ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate that particular key value is present in response</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'latest'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">771ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>22:06:27.450 request:
+1 &gt; GET https://api.spacexdata.com/v4/launches/latest
+1 &gt; Host: api.spacexdata.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:06:28.214 response time in milliseconds: 761
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: spacex-api-cache,spacex-api-response-time
+1 &lt; Alt-Svc: h3-29=&quot;:443&quot;; ma=2592000,h3-34=&quot;:443&quot;; ma=2592000,h3-32=&quot;:443&quot;; ma=2592000
+1 &lt; Cache-Control: max-age=20
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Jun 2021 16:36:27 GMT
+1 &lt; Etag: &quot;7df-CjT0j/oEEmLholtFTi8CTJweYiM&quot;
+1 &lt; Expect-Ct: max-age=0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: Caddy
+1 &lt; Spacex-Api-Cache: HIT
+1 &lt; Spacex-Api-Cache-Online: true
+1 &lt; Spacex-Api-Response-Time: 0ms
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{&quot;launchpad&quot;:&quot;5e9e4501f509094ba4566f84&quot;,&quot;payloads&quot;:[&quot;6079bd679a06446e8c61bf7d&quot;],&quot;rocket&quot;:&quot;5e9d0d95eda69973a809d1ec&quot;,&quot;crew&quot;:[],&quot;date_unix&quot;:1622055540,&quot;cores&quot;:[{&quot;core&quot;:&quot;5f57c54a0622a633027900a1&quot;,&quot;flight&quot;:2,&quot;landing_type&quot;:&quot;ASDS&quot;,&quot;gridfins&quot;:true,&quot;landing_attempt&quot;:true,&quot;legs&quot;:true,&quot;landpad&quot;:&quot;5e9e3033383ecbb9e534e7cc&quot;,&quot;reused&quot;:true,&quot;landing_success&quot;:true}],&quot;auto_update&quot;:true,&quot;date_precision&quot;:&quot;hour&quot;,&quot;links&quot;:{&quot;patch&quot;:{&quot;small&quot;:&quot;https:\/\/imgur.com\/BrW201S.png&quot;,&quot;large&quot;:&quot;https:\/\/imgur.com\/573IfGk.png&quot;},&quot;webcast&quot;:&quot;https:\/\/youtu.be\/xRu-ekesDyY&quot;,&quot;flickr&quot;:{&quot;small&quot;:[],&quot;original&quot;:[]},&quot;reddit&quot;:{&quot;campaign&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/jhu37i\/starlink_general_discussion_and_deployment_thread\/&quot;,&quot;launch&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/nkxg4s\/rspacex_starlink28_launch_discussion_and_updates\/&quot;,&quot;media&quot;:null,&quot;recovery&quot;:&quot;https:\/\/www.reddit.com\/r\/spacex\/comments\/k2ts1q\/rspacex_fleet_updates_discussion_thread\/&quot;},&quot;wikipedia&quot;:&quot;https:\/\/en.wikipedia.org\/wiki\/Starlink&quot;,&quot;youtube_id&quot;:&quot;xRu-ekesDyY&quot;,&quot;presskit&quot;:null,&quot;article&quot;:null},&quot;details&quot;:&quot;This mission launches the 28th batch of operational Starlink satellites, which were version 1.0, from SLC-40. It was the 29th Starlink launch overall. The satellites plan to be delivered to low Earth orbit and will spend a few weeks maneuvering to their operational altitude. The booster is expected to land on ASDS JRTI.&quot;,&quot;id&quot;:&quot;6079bd399a06446e8c61bf77&quot;,&quot;net&quot;:false,&quot;capsules&quot;:[],&quot;static_fire_date_utc&quot;:null,&quot;failures&quot;:[],&quot;date_local&quot;:&quot;2021-05-26T14:59:00-04:00&quot;,&quot;flight_number&quot;:128,&quot;launch_library_id&quot;:&quot;fb25ecf0-fb51-4b5e-b678-105f6ba4c06e&quot;,&quot;fairings&quot;:{&quot;recovered&quot;:true,&quot;ships&quot;:[&quot;5ea6ed2e080df4000697c909&quot;,&quot;5ea6ed2f080df4000697c90c&quot;],&quot;recovery_attempt&quot;:true,&quot;reused&quot;:true},&quot;ships&quot;:[&quot;5ea6ed30080df4000697c913&quot;,&quot;5ea6ed2f080df4000697c90c&quot;,&quot;5ee68c683c228f36bd5809b5&quot;,&quot;5ea6ed2f080df4000697c90b&quot;,&quot;5ea6ed2e080df4000697c909&quot;],&quot;date_utc&quot;:&quot;2021-05-26T18:59:00.000Z&quot;,&quot;static_fire_date_unix&quot;:null,&quot;success&quot;:true,&quot;tbd&quot;:false,&quot;name&quot;:&quot;Starlink-28 (v1.0)&quot;,&quot;window&quot;:null,&quot;upcoming&quot;:false}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.static_fire_date_utc  ==  null</span>
+  
+  <span class="lead-duration duration">010ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

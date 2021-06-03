@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"feature\/spacex[1.1:16]","start":1622738182354,"end":1622738185458,"title":"feature\/spacex[1.1:16] 22:06:22.354-22:06:25.458 Validate the API Response Status as 200"},{"id":2,"group":1,"content":"feature\/spacex[2:18]","start":1622738185503,"end":1622738186438,"title":"feature\/spacex[2:18] 22:06:25.503-22:06:26.438 Validate the Response we are getting is matching with expected output file"},{"id":3,"group":1,"content":"feature\/spacex[3:25]","start":1622738186509,"end":1622738187384,"title":"feature\/spacex[3:25] 22:06:26.509-22:06:27.384 Validate the ID value in Response"},{"id":4,"group":1,"content":"feature\/spacex[4:31]","start":1622738187424,"end":1622738188227,"title":"feature\/spacex[4:31] 22:06:27.424-22:06:28.227 Validate that particular key value is present in response"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
